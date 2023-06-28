@@ -16,3 +16,7 @@ variable "key_name" {
   default = "terraform_pem"
 
 }
+
+variable "private_key_path" {
+
+}

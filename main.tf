@@ -10,7 +10,7 @@ resource "aws_instance" "web_app" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("C:/Users/Vijaykumar/Downloads/terraform_pem.pem")
+    private_key = file(var.private_key_path)
     host        = self.public_ip
   }
 
